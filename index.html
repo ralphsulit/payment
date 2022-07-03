@@ -66,30 +66,83 @@
         <div class="mt-4">
           <span class="danger bold-weight top-section-span"><i class="bi bi-exclamation-triangle me-2"></i>Next Steps. Please Read Carefully:</span>
           <ul class="list-group mt-3">
-            <li class="list-group-item d-flex align-items-flex-start danger-list">
+            <li class="list-group-item d-flex align-items-flex-start danger-list my-2">
               <div class="danger-list-num bold-weight dark-gray me-3">1</div>
               <span class="gray medium-weight">The Court can take up to 12 weeks to process your completion and close your case.<br>This processing time doesn't affect your due date.</span>
             </li>
-            <li class="list-group-item d-flex align-items-flex-start danger-list">
+            <li class="list-group-item d-flex align-items-flex-start danger-list my-2">
               <div class="danger-list-num bold-weight dark-gray me-3">2</div>
               <span class="gray medium-weight">You are legally responsible for following up with Court to make sure your test results were received and that your case is closed successfully.</span>
             </li>
-            <li class="list-group-item d-flex align-items-flex-start danger-list">
+            <li class="list-group-item d-flex align-items-flex-start danger-list my-2">
               <div class="danger-list-num bold-weight dark-gray me-3">3</div>
               <span class="gray medium-weight">You can check the status of your case by calling or visiting the court in person</span>
             </li>
           </ul>
         </div>
       </section>
-      <section class="row">
+
+      <!-- Card Section -->
+      <section class="mid-section mb-5">
+        <div class="card card-mid-section">
+          <div class="card-header card-mid-section-header d-flex justify-content-between">
+            <div class="card-mid-section-header-title">
+                <i class="bi bi-check-square me-2"></i>                                       
+                Yes, Save Me the Stress & Time of Following-Up, and Give Me the Money Back Guarantee!
+              </div>
+              <span class="discount-price"><span class="line-through me-1">$29.99</span>$24.99</span> 
+          </div>
+          <div class="card-body mid-section-body">
+            <h6 class="body-title">The Ultimate Peace of Mind Follow-Up Guarantee</h6>
+            <div>
+              <ul class="list-group mid-section-list">
+                <!-- Case Closed -->
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="bi bi-check-lg me-1 mb-4"></i>
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center me-5 mt-3 mb-1">
+                      <h6 class="mid-list">Case Closed Proof</h6>
+                    </div>
+                    <span class="mid-section-span"><span class="underlined">Save item</span> - let us follow up with the court for you.</span>
+                  </div>
+                </li>
+                <!-- Free Resubmissions -->
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="bi bi-check-lg me-1 mb-4"></i>
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center me-5 mt-3 mb-1">
+                      <h6 class="mid-list">Free Resubmissions</h6>
+                    </div>
+                    <span class="mid-section-span"><span class="underlined">Save money</span> - you won't have to pay the $6.99 fee.</span>
+                  </div>
+                </li>
+                <!-- Money Back Guarantee -->
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="bi bi-check-lg me-1 mb-4"></i>
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center me-5 mt-3 mb-1">
+                      <h6 class="mid-list pt-4">Money Back Guarantee</h6>
+                    </div>
+                    <span class="mid-section-span"><span class="underlined">Risk Free</span> - if we can't successfully close your case with traffic school credit, you'll get a full refund: <span class="underlined">More Info</span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payment Section -->
+      <section class="row my-5">
         <!-- Left Column -->
-        <div class="col-lg-8 left-column d-flex justify-content-center align-items-center flex-column">
+        <div class="col-lg-8 left-column d-flex flex-column">
           <!-- Payment Form -->
           <div class="mb-3">
             <!-- Payment Header -->
-            <h2 class="payment-header dark-gray strong">payment details</h2>
+            <h2 class="payment-header dark-gray">payment details</h2>
+            <h6 class="payment-subheading my-2">We accept all major credit cards. All payment is secure and ecrypted. The date of successful payment will be your course completion date.</h6>
             <!-- Payment Form -->
-            <form class="payment-form" action="">
+            <form class="payment-form mt-4" action="">
               <div class="card">
                 <!-- Card Header for Payment -->
                 <div class="card-header">
@@ -169,8 +222,15 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
+                    <h6 class="dark-gray">Recommended:</h6>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="recommended" id="recommended">
+                      <label class="form-check-label gray mb-2" for="recommended">
+                        Follow-up with my court to ensure they have received my electronic completion certificate  - <span class="orange">$6.95</span>
+                      </label>
+                    </div>
                     <!-- DMV & Court Processing -->
-                    <h6 class="dark-gray">DMV & Court Processing</h6>
+                    <h6 class="dark-gray">DMV & Court Processing:</h6>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="processing" id="regular" checked>
                       <label class="form-check-label gray" for="regular">
@@ -184,7 +244,7 @@
                       </label>
                     </div>
                     <!-- Proof Of Completion -->
-                    <h6 class="dark-gray mt-4">Proof of Completion</h6>
+                    <h6 class="dark-gray mt-4">Proof of Completion:</h6>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="proof" id="usps" checked>
                       <label class="form-check-label gray" for="upsp">
@@ -203,13 +263,12 @@
             </div>
           </div>
         </div>
-  
         <!-- Right Column -->
-        <div class="col-lg-4 right-column d-flex justify-content-center align-items-center flex-column">
+        <div class="col-lg-4 right-column d-flex justify-content-center flex-column">
           <!-- Billing Information -->
           <div class="card border-0 align-middle m-1 billing-info">
             <!-- Card Header -->
-            <div class="card-header border-bottom-0 dark-gray fs-5">
+            <div class="card-header payment-card-header border-bottom-0 dark-gray fs-5">
               billing address
             </div>  
             <!-- Card Body -->
@@ -275,7 +334,7 @@
           <!-- Payment Details -->
           <div class="card border-0 align-middle m-1 payment-details">
             <!-- Card Header -->
-            <div class="card-header border-bottom-0 dark-gray fs-5">
+            <div class="card-header payment-card-header  border-bottom-0 dark-gray fs-5">
               order summary
             </div>
             <!-- Card Body -->
@@ -317,9 +376,9 @@
       </section>
     </div>
     <!-- Footer -->
-    <footer id="footer" class="container-fluid">
+    <!-- <footer id="footer" class="container-fluid">
       Copyright © 2022 - Urban Traffic
-    </footer>
+    </footer> -->
   </div>
 
   <!-- Main Javascript -->

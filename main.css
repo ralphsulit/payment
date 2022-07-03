@@ -61,6 +61,15 @@ Typography
   font-weight: 900;
 }
 
+.line-through {
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
 .bug-check {
   background-color: red;
 }
@@ -136,6 +145,7 @@ Navbar
   border-radius: 50%;
   font-size: 1rem;
 }
+
 .navbar-pagination {
   color: #fff;
   background-color: #FF9727;
@@ -212,14 +222,85 @@ Top Section
 }
 
 /**************
-Left column
+Card Mid Section
 **************/
+.card-mid-section {
+  width: 800px;
+  border: 1px solid #ff9728;
+  font-weight: 700;
+}
+
+.card-mid-section-header {
+  background-color: #ff9728;
+  height: 80px;
+  padding: 15px;
+}
+
+.card-mid-section-header-title {
+  color: #fff;
+  width: 400px;
+}
+
+.bi-check-square {
+  color: #fff;
+}
+
+.body-title {
+  color: #fa8304;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.discount-price {
+  color: #fff;
+}
+
+.mid-section-body {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.mid-section-list {
+  width: 300px;
+}
+
+.bi-check-lg {
+  color: #e67a07;
+}
+
+.mid-list {
+  margin-bottom: 0;
+  color: #374151;
+  font-weight: 700;
+  padding-top: 6px;
+}
+
+.mid-section-span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #777C8A;
+}
+
+.list-group-item {
+  border: none;
+  padding: 0;
+}
+
+/**************
+Left column
+**************/ 
 /* Form */
 .payment-header {
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
+  text-transform: capitalize;
   width: 100%;
   max-width: 500px;
+  font-weight: 900;
+}
+
+.payment-subheading {
+  color: #777C8A;
+  font-weight: 400;
+  width: 600px;
 }
 
 .card-info-header {
@@ -256,7 +337,7 @@ Left column
 /* Accordion */
 .accordion {
   width: 500px;
-  height: 310px;
+  height: 360px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -279,10 +360,19 @@ Right column
   box-shadow: 2px 2px #e2e2e2d7;
 }
 
-.card-header {
+.payment-card-header {
   background-color: #fff;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+select {
+  appearance: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border-color: #B2B2B2;
+  outline: none;
+  cursor: pointer;
 }
 
  /* Billing Info Button */
