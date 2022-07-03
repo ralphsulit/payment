@@ -470,6 +470,11 @@ Responsive Breakpoints
     display: flex;
     align-items: center;
   }
+
+  .body-title {
+    letter-spacing: 0;
+    font-size: 0.9rem;
+  }
 }
 
 /* Large devices */
