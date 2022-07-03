@@ -436,6 +436,16 @@ Footer
 /**************
 Responsive Breakpoints
 **************/
+/* Small devices */
+@media(max-width: 720px) {
+  .danger-list-num {
+    padding: 2px 8px;
+    height: 27px;
+    width: 27px;
+    font-size: 0.8rem;
+  }
+}
+
 /* Large devices */
 @media(min-width: 1024px) {
   .row {
