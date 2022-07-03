@@ -493,6 +493,19 @@ Responsive Breakpoints
   select {
     padding: 5px;
   }
+
+  /* addons */
+  .accordion {
+    width: 350px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  /* right column */
+  .right-column {
+    z-index: -10;
+    align-items: center;
+  }
 }
 
 /* Large devices */
