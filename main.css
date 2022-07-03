@@ -475,6 +475,12 @@ Responsive Breakpoints
     letter-spacing: 0;
     font-size: 0.9rem;
   }
+
+  /* Payment Section */
+  .payment-subheading {
+    width: 350px;
+    line-height: 20px;;
+  }
 }
 
 /* Large devices */
