@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="main.css">
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Payment Page</title>
+</head>
+<body>    
+  <div class="page-container">
+    <!-- Navbar --> 
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand bold-weight" href="#">Urban Traffic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NavLinks -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+            <li class="nav-item navbar-num me-5 line-after">
+              <span class="navbar-pagination">1</span>
+              <a class="nav-link medium-weight" aria-current="page" href="#">Evaluation</a>
+            </li>
+            <li class="nav-item navbar-num me-5 line-after">
+              <span class="navbar-pagination">2</span>
+              <a class="nav-link medium-weight" href="#">Citation</a>
+            </li>
+            <li class="nav-item navbar-num me-5 line-after-1">
+              <span class="navbar-pagination">3</span>
+              <a class="nav-link medium-weight" href="#">Payment</a>
+            </li>
+            <li class="nav-item navbar-num">
+              <span class="navbar-pagination-disabled">4</span>
+              <a class="nav-link disabled medium-weight" href="#">Confirmation</a>
+            </li>
+          </ul>
+          <!-- Logout Button -->
+          <span class="navbar-text">
+            <a href="#" class="logout-btn bold-weight">logout</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+      <!-- Introductory Section -->
+      <section class="my-5 top-section">
+        <div>
+          <h2 class="bold-weight dark-gray">You're almost done</h2>
+          <p class="gray medium-weight top-section-paragraph">After you complete your payment below, we will electronically submit your completion to the DMV & Court today, which saves you the trouble of having to mail anythin.</p>
+        </div>
+        <div class="mt-4">
+          <span class="danger bold-weight top-section-span"><i class="bi bi-exclamation-triangle me-2"></i>Next Steps. Please Read Carefully:</span>
+          <ul class="list-group mt-3">
+            <li class="list-group-item d-flex align-items-flex-start danger-list">
+              <div class="danger-list-num bold-weight dark-gray me-3">1</div>
+              <span class="gray medium-weight">The Court can take up to 12 weeks to process your completion and close your case.<br>This processing time doesn't affect your due date.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-flex-start danger-list">
+              <div class="danger-list-num bold-weight dark-gray me-3">2</div>
+              <span class="gray medium-weight">You are legally responsible for following up with Court to make sure your test results were received and that your case is closed successfully.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-flex-start danger-list">
+              <div class="danger-list-num bold-weight dark-gray me-3">3</div>
+              <span class="gray medium-weight">You can check the status of your case by calling or visiting the court in person</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="row">
+        <!-- Left Column -->
+        <div class="col-lg-8 left-column d-flex justify-content-center align-items-center flex-column">
+          <!-- Payment Form -->
+          <div class="mb-3">
+            <!-- Payment Header -->
+            <h2 class="payment-header dark-gray strong">payment details</h2>
+            <!-- Payment Form -->
+            <form class="payment-form" action="">
+              <div class="card">
+                <!-- Card Header for Payment -->
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a href="#paymentCC" class="nav-link active" role="tab" aria-controls="description" aria-selected="true">Payment via Debit or Credit Card</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#paymentPP" class="nav-link" role="tab" aria-controls="history" aria-selected="false">Pay via Paypal</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Card Body for Payment -->
+                <div class="card-body">
+                  <form action="">
+                    <div class="d-flex justify-content-between m-3">
+                      <!-- Card Owner -->
+                      <div class="form-group owner">
+                        <label class="card-info-header mb-2 medium-weight" for="owner">Owner</label>
+                        <input type="text" class="form-control" id="owner">
+                      </div>
+                      <!-- Card CVV -->
+                      <div class="form-group CVV">
+                        <label class="card-info-header mb-2 medium-weight" for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                      </div>
+                    </div>
+                    <!-- Card Number Field   -->
+                    <div class="form-group m-3" id="card-number-field">
+                      <label class="card-info-header mb-2 medium-weight" for="cardNumber">Card Number</label>
+                      <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <!-- Expiration Date -->
+                    <div class="form-group m-3" id="expiration-date">
+                      <label class="card-info-header mb-2 me-3 medium-weight" for="">Expiration Date</label>
+                      <select name="" id="">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="16">2016</option>
+                        <option value="17">2017</option>
+                        <option value="18">2018</option>
+                        <option value="19">2019</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                      </select>
+                    </div>
+                    <!-- Payment Submit Button -->
+                    <div class="form-group d-flex justify-content-center m-5" id="pay-now">
+                      <button class="payment-btn btn btn-default" id="confirm-purchase">Confirm</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Add Ons -->
+          <div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed card-info-header medium-weight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Add Ons
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- DMV & Court Processing -->
+                    <h6 class="dark-gray">DMV & Court Processing</h6>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="processing" id="regular" checked>
+                      <label class="form-check-label gray" for="regular">
+                        Regular Certificate Processing - <span class="orange">$6.95</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="processing" id="rushed">
+                      <label class="form-check-label gray" for="rushed">
+                        Rushed Certificate Processing - <span class="orange">$0.00</span>
+                      </label>
+                    </div>
+                    <!-- Proof Of Completion -->
+                    <h6 class="dark-gray mt-4">Proof of Completion</h6>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="proof" id="usps" checked>
+                      <label class="form-check-label gray" for="upsp">
+                        USPS First Class Printed Copy of Completion Certificate - <span class="orange">$6.95</span> 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="proof" id="emailed">
+                      <label class="form-check-label gray" for="emailed">
+                        Emailed Copy of your Completion Certificate - <span class="orange">$9.95</span> 
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-lg-4 right-column d-flex justify-content-center align-items-center flex-column">
+          <!-- Billing Information -->
+          <div class="card border-0 align-middle m-1 billing-info">
+            <!-- Card Header -->
+            <div class="card-header border-bottom-0 dark-gray fs-5">
+              billing address
+            </div>  
+            <!-- Card Body -->
+            <div class="card-body gray">
+              <ul class="list-unstyled">
+                <li class="name m-1">Asher Jefferson</li>
+                <li class="address m-1">Dolor in quia e, CA 93419</li>
+                <li class="phone-number m-1">Phone number: 178-381-7383</li>
+                <li class="email m-1">Email: vuciz@mailinator.com</li>
+              </ul>
+              <!-- Button -->
+              <div class="d-grid gap-2">
+                <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#billingInfo">Edit Billing Info</button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="billingInfo" tabindex="-1" aria-labelledby="billingInfoModal" aria-hidden="true">
+                <div class="vertical-align-helper">
+                  <div class="modal-dialog vertical-align-center">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="billingInfoModal">Billing Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!-- Modal Body -->
+                      <div class="modal-body">
+                        <!-- Modal Form -->
+                        <form>
+                          <!-- Billing Info Name -->
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="billname" required>
+                          </div>
+                          <!-- Billing Info Address -->
+                          <div class="mb-3">
+                            <label for="address" class="form-label">Address:</label>
+                            <input type="text" class="form-control" id="address" required>
+                            <div id="error"></div>
+                          </div>
+                          <!-- Billing Info Phone Number -->
+                          <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phoneNumber" required>
+                          </div>
+                          <!-- Billing Info Email -->
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                          </div>
+                          <!-- Modal Footer -->
+                          <div class="modal-footer">
+                            <button type="submit" class="btn" id="submit">Save changes</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Payment Details -->
+          <div class="card border-0 align-middle m-1 payment-details">
+            <!-- Card Header -->
+            <div class="card-header border-bottom-0 dark-gray fs-5">
+              order summary
+            </div>
+            <!-- Card Body -->
+            <div class="card-body gray">
+              <ul class="list-unstyled">
+                <!-- Date -->
+                <li class="list-group-item d-flex justify-content-between align-items-center m-2">
+                  Date
+                  <span>July 2, 2022</span>
+                </li>
+                <!-- Time -->
+                <li class="list-group-item d-flex justify-content-between align-items-center m-2">
+                  Time
+                  <span>11:11 AM</span>
+                </li>
+              </ul>
+              <hr class="divider mx-auto"> 
+              <!-- Orders -->
+              <ul class="list-unstyled mt-5 mb-5" >
+                <li class="list-group-item d-flex justify-content-between align-items-center m-2">
+                  California Traffic School Online
+                  <span>$6.25</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center m-2">
+                  Upgrades
+                  <span>$9.25</span>
+                </li>
+                <hr class="divider mx-auto mt-5"> 
+                <!-- Order Total -->
+                <li class="list-group-item d-flex justify-content-between align-items-center m-2 mt-4 mb-4 medium-weight dark-gray">
+                  Order Total:
+                  <span>$20.9</span>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="container-fluid">
+      Copyright © 2022 - Urban Traffic
+    </footer>
+  </div>
+
+  <!-- Main Javascript -->
+  <script src="script.js"></script>
+  <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
