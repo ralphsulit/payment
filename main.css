@@ -438,6 +438,7 @@ Responsive Breakpoints
 **************/
 /* Small devices */
 @media(max-width: 720px) {
+  /* Top Section */
   .top-section-paragraph {
     width: 330px;
   }
@@ -452,6 +453,22 @@ Responsive Breakpoints
   .danger-list-span {
     font-size: 0.9rem;
     width: 300px;
+  }
+
+  /* Mid Section */
+  .card-mid-section {
+    width: 350px;
+  }
+
+  .card-mid-section-header-title {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+
+  .discount-price {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
   }
 }
 
