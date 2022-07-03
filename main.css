@@ -438,11 +438,20 @@ Responsive Breakpoints
 **************/
 /* Small devices */
 @media(max-width: 720px) {
+  .top-section-paragraph {
+    width: 330px;
+  }
+
   .danger-list-num {
     padding: 2px 8px;
     height: 27px;
     width: 27px;
     font-size: 0.8rem;
+  }
+
+  .danger-list-span {
+    font-size: 0.9rem;
+    width: 300px;
   }
 }
 
