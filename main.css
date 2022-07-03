@@ -479,7 +479,19 @@ Responsive Breakpoints
   /* Payment Section */
   .payment-subheading {
     width: 350px;
-    line-height: 20px;;
+    line-height: 20px;
+  }
+
+  .payment-form {
+    width: 350px;
+  }
+
+  .owner {
+    width: 150px;
+  }
+
+  select {
+    padding: 5px;
   }
 }
 
