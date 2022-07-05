@@ -275,10 +275,10 @@
             <!-- Card Body -->
             <div class="card-body gray">
               <ul class="list-unstyled">
-                <li class="name m-1">Asher Jefferson</li>
-                <li class="address m-1">Dolor in quia e, CA 93419</li>
-                <li class="phone-number m-1">Phone number: 178-381-7383</li>
-                <li class="email m-1">Email: vuciz@mailinator.com</li>
+                <li class="name m-1" id="infoName">Asher Jefferson</li>
+                <li class="address m-1" id="infoAddress">Dolor in quia e, CA 93419</li>
+                <li class="phone-number m-1" id="infoNumber">Phone number: 178-381-7383</li>
+                <li class="email m-1" id="infoEmail">Email: vuciz@mailinator.com</li>
               </ul>
               <!-- Button -->
               <div class="d-grid gap-2">
@@ -297,7 +297,7 @@
                       <!-- Modal Body -->
                       <div class="modal-body">
                         <!-- Modal Form -->
-                        <form>
+                        <form id="billInfo-form onsubmit='event.preventDefault();onFormSubmit();'" autocomplete="off">
                           <!-- Billing Info Name -->
                           <div class="mb-3">
                             <label for="name" class="form-label">Full Name:</label>
@@ -306,22 +306,21 @@
                           <!-- Billing Info Address -->
                           <div class="mb-3">
                             <label for="address" class="form-label">Address:</label>
-                            <input type="text" class="form-control" id="address" required>
-                            <div id="error"></div>
+                            <input type="text" class="form-control" id="billAddress" required>
                           </div>
                           <!-- Billing Info Phone Number -->
                           <div class="mb-3">
                             <label for="phoneNumber" class="form-label">Phone Number:</label>
-                            <input type="tel" class="form-control" id="phoneNumber" required>
+                            <input type="tel" class="form-control" id="billPhoneNumber" required>
                           </div>
                           <!-- Billing Info Email -->
                           <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="billingEmail" required>
                           </div>
                           <!-- Modal Footer -->
                           <div class="modal-footer">
-                            <button type="submit" class="btn" id="submit">Save changes</button>
+                            <button type="submit" class="btn" data-bs-dismiss="modal" id="billingBtn">Save changes</button>
                           </div>
                         </form>
                       </div>

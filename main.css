@@ -443,6 +443,7 @@ Responsive Breakpoints
 **************/
 /* Small devices */
 @media(max-width: 720px) {
+
   /* Top Section */
   .top-section-paragraph {
     width: 330px;
@@ -497,6 +498,10 @@ Responsive Breakpoints
 
   select {
     padding: 5px;
+  }
+
+  .right-column {
+    width: 370px;
   }
 
   /* addons */
