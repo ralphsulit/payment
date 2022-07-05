@@ -1,3 +1,7 @@
+//////////////////////////////
+/////Editing Billing Information
+////////////////////////////// 
+
 // Variables
 let submitBtn = document.getElementById('billingBtn');
 let email = document.getElementById('billingEmail');
@@ -32,3 +36,23 @@ submitBtn.addEventListener('click', function (e) {
   infoEmail.innerText = email.value;
   email.value = '';
 })
+
+
+//////////////////////////////
+/////Checkbox
+//////////////////////////////
+
+// Variables
+let checkBox = document.getElementById('flexCheckChecked');
+let cert1 = document.getElementById('certificate-1');
+
+console.log(cert1.innerText); 
+
+// When Clicked Cerificate will be added on the Order Summary
+let check = () => {
+  if (checkBox.checked === true) {
+    cert1.style.display = 'flex';
+  } else {
+    cert1.style.display = 'none';
+  }
+};

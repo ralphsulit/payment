@@ -426,6 +426,11 @@ select {
   height: 420px;
 }
 
+#certificate-1 {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
 /**************
 Footer
 **************/
